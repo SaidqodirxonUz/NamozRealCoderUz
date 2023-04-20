@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 .namoz-time li {
-  background-color: rgba(140, 37, 236, 0.8);
+  background-color: #1f1d1d00;
   border-radius: 7px;
   box-sizing: border-box;
   height: 100px;
@@ -32,7 +32,7 @@
   min-height: 300px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(140, 37, 236, 0.5);
+  background-color: #1f1d1d93;
 }
 .select-region {
   list-style: none;

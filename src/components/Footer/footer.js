@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <center>
-        <h2>&copy;NamozUz {new Date().getFullYear()}</h2>
+        <h2>&copy; Islom.RealCoder.Uz {new Date().getFullYear()}</h2>
       </center>
       <div>
         <ul className="footer-links">

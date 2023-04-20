@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-const ScrollButton = () =>{
-    const [showScroll, setShowScroll] = useState(false);
+const ScrollButton = () => {
+  const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 600) {
@@ -16,20 +16,20 @@ const ScrollButton = () =>{
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  return(
+  return (
     <FaArrowUp
-    className="scrollTop"
-    onClick={scrollTop}
-    style={{
-      height: 40,
-      display: showScroll ? "flex" : "none",
-      backgroundColor: "blueviolet",
-      borderRadius: "5px",
-      color: "white",
-      padding: "5px",
-    }}
-  />
-  )
-}
+      className="scrollTop"
+      onClick={scrollTop}
+      style={{
+        height: 40,
+        display: showScroll ? "flex" : "none",
+        backgroundColor: "#222222",
+        borderRadius: "5px",
+        color: "white",
+        padding: "5px",
+      }}
+    />
+  );
+};
 
-export default ScrollButton
+export default ScrollButton;

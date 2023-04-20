@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.png";
+// import logo from "../../images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
@@ -23,14 +23,13 @@ const Header = () => {
   const onMenu = (e) => {
     setMenu(!menu);
   };
-  
 
   return (
     <header className="header">
       <div className="header-items">
         <Link to="/" className="header-logo">
-          <img src={logo} alt="logo" style={{ width: "40%" }} />
-          <h2>NamozUz</h2>
+          {/* <img src={logo} alt="logo" style={{ width: "40%" }} /> */}
+          <h2>Islom.RealCoder.Uz</h2>
         </Link>
         <ul className={menu ? "header-ul" : "header-ul-res"}>
           <li>
@@ -105,7 +104,7 @@ const Header = () => {
           </li>
           <li>
             <Link to="/developer" className="nav-link">
-              Dasturchidan
+              Dasturchi
             </Link>
           </li>
         </ul>

@@ -5,7 +5,7 @@ import "./time.css";
 const Time = () => {
   const [time, setTime] = useState();
   const [hour, setHour] = useState();
-  const [city, setCity] = useState("Namangan");
+  const [city, setCity] = useState("Sirdaryo");
 
   useEffect(() => {
     const getTime = async () => {
@@ -25,8 +25,7 @@ const Time = () => {
       {time && (
         <div className="namoz-time-container">
           <h1>
-            Namoz vaqtlari {city} uchun (Bugungi sana {time.date.gregorian.date}{" "}
-            ){" "}
+            {city} Namoz Vaqtlari (Bugungi sana {time.date.gregorian.date} ){" "}
           </h1>
           <h2>Hozirgi vaqt {hour}</h2>
           <ul className="select-region">
@@ -37,7 +36,7 @@ const Time = () => {
               <select
                 name="viloyat"
                 id="viloyat"
-                defaultValue="Namangan"
+                defaultValue="Sirdaryo"
                 onChange={(e) => setCity(e.target.value)}
               >
                 <option value="Toshkent">Toshkent</option>
